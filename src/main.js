@@ -7,7 +7,7 @@ import * as VueRouter from 'vue-router';
 
 import Landing from "./components/Landing.vue";
 import Sell from "./components/Sell.vue";
-import Hello from "./components/HelloWorld.vue";
+import DataSetCard from "./components/DataSetCard.vue";
 import Notfound from "./components/404.vue";
 import {createRouter, createWebHistory} from "vue-router";
 
@@ -18,7 +18,7 @@ const router = createRouter({
     routes: [
         { path: '/', name: "Landing", component: Landing },
         { path: '/sell', name: "Sell", component: Sell },
-        { path: '/hello', name: "Hello", component: Hello },
+        { path: '/marketplace', name: "DataSetCard", component: DataSetCard },
         { path: '/:catchAll(.*)', name: "Notfound", component: Notfound }
     ]
 // shorthand routes:routes

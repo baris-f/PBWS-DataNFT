@@ -8,6 +8,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "daisyui": "^2.13.6",
     "vue": "^3.2.25"
   },
   "devDependencies": {

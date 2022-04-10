@@ -1,7 +1,7 @@
 <script>
 export default {
   name: "DataSetCard",
-  props: ['name', 'description', 'tags', 'more'],
+  props: ['name', 'description', 'tags', 'link','more'],
 }
 </script>
 <template>
@@ -11,7 +11,7 @@ export default {
       <div class="card-actions justify-end py-2 px-2">
         <div v-for="tag in tags" class="badge badge-gray-900 text-gray-200">{{ tag }}</div>
       </div>
-      <button class="btn btn-secondary">More Info</button>
+      <router-link taf="button" to="/ukTraficAccident" class="btn btn-secondary btn-block">More Info</router-link>
     </card>
 </template>
 <style scoped>

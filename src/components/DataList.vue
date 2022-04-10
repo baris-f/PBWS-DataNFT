@@ -12,30 +12,35 @@ export default {
           name: "UK Traffic 2'177'207 Accidents and Vehicles from 2005 to 2017",
           description: "The UK government collects and publishes (usually on an annual basis) detailed information about traffic accidents across the country. This information includes, but is not limited to, geographical locations, weather conditions, type of vehicles, number of casualties and vehicle manoeuvres, making this a very interesting and comprehensive dataset for analysis and research.",
           tags: ["automobiles","vehicles","transportation","law","games","demographics"],
+          link:"/ukTraficAccident",
           more: true,
         },
         {
           name: "The Metaverse LAND Dataset",
           description: "The data is taken from Etherscan and Opensea and fed to a machine learning algorithm that is trained using past price movements and is retrained on a regular basis to keep the accuracy of the price predictions high. The core of the dataset are the aforementioned price predictions for each land that has enough trading history to compute a reasonable prediction.",
           tags: ["nft", "metaverse", "ai", "virtual-real-estate", "the-sandbox", "land-valuations", "dao"],
+          link: "",
           more: false,
         },
         {
           name: "News Headlines",
           description: "The latest headlines of some of the leading English newspapers, including headline text, date of publishing, URL, and other optional data like tags, language, etc. if available.2",
           tags: ["news", "headlines", "new-york-times", "cnbc", "financial-times", "economist", "reuters", "sky-news", "bloomberg", "bbc"],
+          link: "",
           more: false,
         },
         {
           name: "Weather Germany 12/2021",
           description: "This data set contains weather data of 69 selected locations (see sample file) in Germany in 12/2021 with an approximate interval of 15 minutes.",
           tags: ["weather","germany","december","2021","temperature","wind","precipitation"],
+          link: "",
           more: false,
         },
         {
           name: "Store locations dm-drogerie markt",
           description: "dm-drogerie markt is a chain of retail stores offering cosmetics, healthcare items, household products, health food and drinks in 13 countries (see wikipedia). This data set contains a list of all store locations and will be updateted regularly.",
           tags: ["retail","cosmetics","healthcare","location","stores","retail", "household","food","drinks","germany"],
+          link: "",
           more: false,
         },
       ]
@@ -79,7 +84,7 @@ export default {
     </div>
 
       <div class="container mx-auto grid grid-cols-3 gap-3 col-span-4 pl-5">
-        <DataSetCard v-for="dataset in datasets" :tags="dataset.tags" :description="dataset.description" :name="dataset.name"/>
+        <DataSetCard v-for="dataset in datasets" :tags="dataset.tags" :description="dataset.description" :name="dataset.name" :link="dataset.link"/>
       </div>
   </div>
 

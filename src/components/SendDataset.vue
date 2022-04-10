@@ -1,11 +1,16 @@
 <script setup>
-
+import FieldList from "./FieldList.vue";
+import {ref} from "vue";
 
 let newTodo = '';
-let todos = []
+let todos = ref([])
+let index = 0;
+let fieldInput = ''
 
 function addTodo (todo) {
-  todos.push(todo)
+  index++;
+  if (todo !== "")
+    todos.value.push(todo)
   newTodo = ''
 }
 function cancelTodo () {
@@ -17,6 +22,8 @@ function removeTodo (index) {
 function clearAll () {
   todos = []
 }
+
+
 </script>
 
 <template>
@@ -26,7 +33,7 @@ function clearAll () {
         <div class="text-md text-gray-600 ml-2 "> We will generate a secure access token to it.
         Declare the data field you want to share</div>
       </div>
-      <div class="space-y-2 ml-8">
+      <div class="space-y-2 ml-8 lg:ml-24 mb-2">
         <div>
           <label class="label">
             <span class="label-text">Private API Endpoint</span>
@@ -41,14 +48,15 @@ function clearAll () {
               <span class="label-text">Add Database Field</span>
             </label>
             <label class="input-text">
-              <input type="text" placeholder="Table name" class="input input-bordered lg:w-80">
+              <input type="text" placeholder="Table name" class="input input-bordered lg:w-80" v-model="fieldInput">
             </label>
           </div>
           <div class="flex flex-col mx-auto">
             <div class="flex-grow"></div>
-            <button class="btn btn-primary">Add Field</button>
+            <button class="btn btn-primary" @click="addTodo(fieldInput)">Add Field</button>
           </div>
         </div>
+        <FieldList :todos="todos" :key="index"/>
       </div>
   </div>
 </template>

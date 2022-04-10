@@ -1,7 +1,7 @@
 <script>
 export default {
   name: "DataSetCard",
-  props: ['name', 'description', 'tags'],
+  props: ['name', 'description', 'tags', 'more'],
 }
 </script>
 <template>

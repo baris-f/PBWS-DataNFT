@@ -9,7 +9,7 @@
 
 
   <div class="grid grid-cols-5 px-3">
-    <div class="text-primary card pl-3 pt-5 bg-gray-100 px-3 font-bold">
+    <div class="text-primary card pl-3 pt-5 bg-gray-100 px-3 font-bold row-end-0">
       <div class="form-control pl-3">
         <label class="cursor-pointer label">
           <span class="label-text text-primary">Topic A</span>
@@ -33,7 +33,7 @@
 
     </div>
 
-      <div class="container mx-auto grid grid-cols-3 gap-3 col-span-4 px-5">
+      <div class="container mx-auto grid grid-cols-3 gap-3 col-span-4 pl-5">
         <DataSetCard/>
         <DataSetCard/>
         <DataSetCard/>

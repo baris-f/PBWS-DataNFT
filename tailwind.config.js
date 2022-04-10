@@ -17,6 +17,6 @@ module.exports = {
 
   // daisyUI config (optional)
   daisyui: {
-    darkTheme: "luxury",
+    darkTheme: "winter",
   },
 }

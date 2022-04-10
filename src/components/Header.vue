@@ -4,7 +4,7 @@
 </script>
 
 <template>
-  <header class="fixed text-black px-10 mt-4 w-full">
+  <header class="fixed text-black px-10 mt-4 w-full z-10">
     <div to="/" class="flex mb-4 justify-center">
       <router-link class="flex" to="/">
         <img src="src/assets/logo.png" class="w-8 h-8 mr-1">

@@ -18,7 +18,6 @@ const count = ref(0)
         <div class="text-lg mb-8 text-gray-700">
           Follow these simple steps, and earn from your data !
         </div>
-
       </div>
       <div class="flex-grow"></div>
       <Form></Form>

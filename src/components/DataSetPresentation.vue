@@ -10,8 +10,8 @@
       <div v-for="tag in DataSets.Tags" class="badge badge-gray-900 text-gray-200">{{ tag }}</div>
       </div>
       </div>
-    <div class="grid-flow-col content-center bg-gray-300 rounded-md p-2">
-      <button class="btn btn-secondary content-center">Access data</button>
+    <div class="grid-flow-col content-center justify-center place-items-center rounded-md p-2">
+      <button class="btn btn-secondary content-center justify-center place-items-center">Access data</button>
     </div>
   </div>
 

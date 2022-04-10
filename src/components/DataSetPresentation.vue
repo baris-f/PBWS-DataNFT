@@ -1,18 +1,19 @@
 <template>
-  <div class="py-20 grid place-items-center">
+  <div class="pt-20 grid place-items-center">
     <h1 class="text-3xl mb-10 items-center">{{DataSets.Name}}</h1>
   </div>
 
-  <div class="grid grid-cols-3 gap-4 px-5 pb-10">
+  <div class="container mx-auto mb-10">
     <div class="flex flex-col col-span-2 bg-gray-300 rounded-md p-2">
       <p class="whitespace-pre-line m-5">{{DataSets.Description}}</p>
       <div class="card-actions justify-end py-2 px-2">
       <div v-for="tag in DataSets.Tags" class="badge badge-gray-900 text-gray-200">{{ tag }}</div>
       </div>
+      <div class="absolute rounded-md p-2">
+        <button class="btn btn-secondary content-center justify-center place-items-center">Access data</button>
       </div>
-    <div class="grid-flow-col content-center justify-center place-items-center rounded-md p-2">
-      <button class="btn btn-secondary content-center justify-center place-items-center">Access data</button>
     </div>
+
   </div>
 
 </template>

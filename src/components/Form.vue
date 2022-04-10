@@ -43,9 +43,7 @@ function next(){
 
 function loadPage()
 {
-  router.push({ path: '/marketplace', replace: true })
-  router.replace({ path: '/marketplace' })
-  location.reload();
+
 }
 
 </script>

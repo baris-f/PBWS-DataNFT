@@ -12,7 +12,10 @@ import Header from "./components/Header.vue";
 
 <style>
 html {
-  background-image: linear-gradient(-20deg, #6e45e2 0%, #88d3ce 100%);
+  background-image: linear-gradient(0deg, #33526C 20% , #000000 100%);
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   width: 100%;
   height: 100%;
 }

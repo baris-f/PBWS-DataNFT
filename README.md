@@ -1,7 +1,20 @@
-# Vue 3 + Vite
+# Datanest
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+Datanest is an web3 project made during the first edition of the [PBWS](https://www.pbwsummit.com/) Hackathon in Paris, 2022.
 
-## Recommended IDE Setup
+![datanest.png](datanest.png)
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+Datanest is a marketplace for enterprise to monetize their dataset, selling decentralized access to their data throught usage of an NFT (Contract sample code on another github)
+
+## Usage
+To launch project locally, run
+
+```
+npm install
+npm run dev
+```
+
+and then head to http://localhost:3000/
+
+## Framework
+This project uses [Vue 3](https://vuejs.org/guide/quick-start.html#with-build-tools) + Vite.
